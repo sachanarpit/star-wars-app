@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <video autoplay muted loop id="myVideo">
+      <source src="./components/Space - 2381.mp4" type="video/mp4" />
+    </video>
+    <center>
+      <div id="card">
+        <div class="image">
+          <img id="logo" src="./components/download.png" alt="" />
+        </div>
+        <br />
+        <div id="main">
+          <div class="search">
+            <input
+              type="text"
+              id="inputBox"
+              placeholder="type your favourite character"
+              oninput="showResult()"
+            />
+          </div>
+
+          <div id="results">
+            <!-- <div class="res">
+              <h3>Luke Skywalker</h3>
+              <p>19BBY</p>
+            </div>
+            <p>hello</p>
+            <p>hello</p>
+            <p>hello</p>
+            <p>hello</p>
+            <p>hello</p>
+            <p>hello</p>
+            <p>hello</p> -->
+          </div>
+        </div>
+      </div>
+    </center>
+    <div id="popupshow"></div>
+  </body>
+</html>
+
+<script src="./scripts.js"></script>
