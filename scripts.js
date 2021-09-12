@@ -46,6 +46,20 @@ async function showResult() {
   );
 }
 
+function Debaunce(func, delay) {
+  output.innerHTML = null;
+  let img = document.createElement("img");
+  img.src = "./components/Vp3R.gif";
+  output.append(img);
+  let query = document.getElementById("inputBox").value;
+  if (query.length < 3) {
+    return false;
+  }
+  setTimeout(() => {
+    func();
+  }, delay);
+}
+
 // popup html
 // </div><button id="popupBtn" onclick="togglePopup()">Show Popup</button>
 //               <div class="popup" id="popup-1">
